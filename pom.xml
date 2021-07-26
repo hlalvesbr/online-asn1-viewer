@@ -106,6 +106,8 @@
     </dependencyManagement>
 
     <build>
+        <finalName>online-asn1-viewer</finalName>
+        
         <plugins>
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
