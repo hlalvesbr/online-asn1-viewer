@@ -6,7 +6,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.hlalvesbr</groupId>
     <artifactId>online-asn1-viewer</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1</version>
     <packaging>war</packaging>
 
     <url>https://github.com/hlalvesbr/online-asn1-viewer</url>
