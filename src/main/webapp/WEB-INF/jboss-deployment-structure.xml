@@ -1,0 +1,10 @@
+<jboss-deployment-structure>
+    <deployment>
+        <dependencies>
+			<module name="org.bouncycastle" export="true"/>
+            <module name="org.apache.commons.lang" export="true" />
+            <module name="org.apache.commons.io" export="true" />
+            <module name="org.apache.commons.beanutils" export="true" />
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>
