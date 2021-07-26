@@ -50,7 +50,7 @@
         <dependency>
             <groupId>org.bouncycastle</groupId>
             <artifactId>bcprov-jdk15on</artifactId>
-            <version>1.68.0.redhat-00005</version>
+            <version>1.68.0</version>
             <scope>provided</scope>
         </dependency>
 
@@ -89,17 +89,17 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.jboss.bom</groupId>
-                <artifactId>jboss-eap-jakartaee8-with-tools</artifactId>
-                <version>7.3.7.GA</version>
+                <groupId>org.wildfly.bom</groupId>
+                <artifactId>wildfly-jakartaee8-with-tools</artifactId>
+                <version>23.0.2.Final</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
 
             <dependency>
-                <groupId>org.jboss.bom</groupId>
-                <artifactId>jboss-eap-xp-microprofile</artifactId>
-                <version>2.0.0.GA-7.3.7.GA</version>
+                <groupId>org.wildfly.bom</groupId>
+                <artifactId>wildfly-microprofile</artifactId>
+                <version>23.0.2.Final</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -124,37 +124,14 @@
             </plugin>
 
             <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.8.7</version>
-
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-
-                    <execution>
-                        <id>report</id>
-                        <phase>prepare-package</phase>
-
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
                 <groupId>org.wildfly.plugins</groupId>
                 <artifactId>wildfly-jar-maven-plugin</artifactId>
-                <version>4.0.3.Final</version>
+                <version>5.0.1.Final</version>
 
                 <configuration>
                     <feature-packs>
                         <feature-pack>
-                            <location>org.jboss.eap:wildfly-galleon-pack:2.0.0.GA-redhat-00005</location>
+                            <location>wildfly@maven(org.jboss.universe:community-universe)#23.0.2.Final</location>
 
                             <included-packages>
                                 <package>org.apache.commons.lang</package>
